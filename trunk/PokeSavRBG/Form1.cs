@@ -18,39 +18,46 @@ namespace PokeSavRBG
         }
 
         String SAV;
+        Boolean fileOpen = false;
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon1, true, 0, 1, this);
             party.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon2, true, 0, 2, this);
             party.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon3, true, 0, 3, this);
             party.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon4, true, 0, 4, this);
             party.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon5, true, 0, 5, this);
             party.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
             Party party = new Party(Offsets.PartyPokemon6, true, 0, 6, this);
             party.Show();
         }
@@ -67,18 +74,20 @@ namespace PokeSavRBG
 
             //Present to the user.
             if (fd.ShowDialog() == DialogResult.OK)
+            {
                 SAV = fd.FileName;
+                FileInfo fileInfo = new FileInfo(SAV);
+                save.data = new byte[fileInfo.Length];
+                FileStream fileStream = fileInfo.OpenRead();
+                fileStream.Read(save.data, 0, save.data.Length);
+                fileStream.Close();
+
+                updateData();
+                fileOpen = true;
+            }
 
             if (SAV == String.Empty)
                 return;
-
-            FileInfo fileInfo = new FileInfo(SAV);
-            save.data = new byte[fileInfo.Length];
-            FileStream fileStream = fileInfo.OpenRead();
-            fileStream.Read(save.data, 0, save.data.Length);
-            fileStream.Close();
-
-            updateData();
         }
 
         public void updateData()
@@ -94,6 +103,8 @@ namespace PokeSavRBG
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (fileOpen == false) return;
+
             ushort hl = 0x2598;
             ushort bc = 0x0F8B;
             byte a = 0x01;
@@ -127,43 +138,6 @@ namespace PokeSavRBG
             FileStream fileStream = fileInfo.OpenWrite();
             fileStream.Write(save.data, 0, save.data.Length);
             fileStream.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /*FolderBrowserDialog fb = new FolderBrowserDialog();
-
-            //fb.RootFolder = "K:\\TEST\\";
-            //Now set the file type
-
-            if (fb.ShowDialog() == DialogResult.OK)
-                SAV = fb.SelectedPath;
-
-            if (SAV == String.Empty)
-                return;
-
-            /*FileInfo fileInfo = new FileInfo(SAV);
-            save.data = new byte[fileInfo.Length];
-            FileStream fileStream = fileInfo.OpenRead();
-            fileStream.Read(save.data, 0, save.data.Length);
-            fileStream.Close();
-
-            updateData();*/
-
-            string[] temp = Directory.GetFiles("K:\\TEST\\final\\");
-            string[] temp2 = Directory.GetFiles("K:\\TEST\\final\\");
-            MessageBox.Show(temp[0]);
-            MessageBox.Show(temp[1]);
-
-            for (int c = 0; c < temp.Length; c++)
-            {
-                temp2[c] = temp[c].Substring(14, 2);
-                Directory.CreateDirectory("K:\\TEST\\final\\" + temp2[c] + "\\");
-                File.Move(temp[c], "K:\\TEST\\final\\" + temp2[c] + "\\" + temp[c].Substring(14, 6));
-            }
-
-            MessageBox.Show(temp2[0]);
-            MessageBox.Show(temp2[1]);
         }
     }
 }
