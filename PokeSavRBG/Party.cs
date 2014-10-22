@@ -11,7 +11,7 @@ namespace PokeSavRBG
 {
     public partial class Party : Form
     {
-        public Party(int offset, bool isParty, int box, int pkmnnr, Form1 parent)
+        public Party(int offset, bool isParty, int box, int pkmnnr, MainView parent)
         {
             InitializeComponent();
 
@@ -46,7 +46,7 @@ namespace PokeSavRBG
         bool isParty;
         int box;
         int pkmnnr;
-        Form1 parent;
+        MainView parent;
 
         public void populate()
         {

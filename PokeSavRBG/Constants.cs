@@ -560,265 +560,178 @@ namespace PokeSavRBG
             {
                 case 0x4F:
                     return "=";
-                    break;
                 case 0x57:
                     return "#";
-                    break;
                 case 0x51:
                     return "*";
-                    break;
                 case 0x52:
                     return "A1";
-                    break;
                 case 0x53:
                     return "A2";
-                    break;
                 case 0x54:
                     return "PK";
-                    break;
                 case 0x55:
                     return "+";
-                    break;
                 case 0x58:
                     return "$";
-                    break;
                 case 0x7F:
                     return " ";
-                    break;
                 case 0x80:
                     return "A";
-                    break;
                 case 0x81:
                     return "B";
-                    break;
                 case 0x82:
                     return "C";
-                    break;
                 case 0x83:
                     return "D";
-                    break;
                 case 0x84:
                     return "E";
-                    break;
                 case 0x85:
                     return "F";
-                    break;
                 case 0x86:
                     return "G";
-                    break;
                 case 0x87:
                     return "H";
-                    break;
                 case 0x88:
                     return "I";
-                    break;
                 case 0x89:
                     return "J";
-                    break;
                 case 0x8A:
                     return "K";
-                    break;
                 case 0x8B:
                     return "L";
-                    break;
                 case 0x8C:
                     return "M";
-                    break;
                 case 0x8D:
                     return "N";
-                    break;
                 case 0x8E:
                     return "O";
-                    break;
                 case 0x8F:
                     return "P";
-                    break;
                 case 0x90:
                     return "Q";
-                    break;
                 case 0x91:
                     return "R";
-                    break;
                 case 0x92:
                     return "S";
-                    break;
                 case 0x93:
                     return "T";
-                    break;
                 case 0x94:
                     return "U";
-                    break;
                 case 0x95:
                     return "V";
-                    break;
                 case 0x96:
                     return "W";
-                    break;
                 case 0x97:
                     return "X";
-                    break;
                 case 0x98:
                     return "Y";
-                    break;
                 case 0x99:
                     return "Z";
-                    break;
                 case 0x9C:
                     return ":";
-                    break;
                 case 0xA0:
                     return "a";
-                    break;
                 case 0xA1:
                     return "b";
-                    break;
                 case 0xA2:
                     return "c";
-                    break;
                 case 0xA3:
                     return "d";
-                    break;
                 case 0xA4:
                     return "e";
-                    break;
                 case 0xA5:
                     return "f";
-                    break;
                 case 0xA6:
                     return "g";
-                    break;
                 case 0xA7:
                     return "h";
-                    break;
                 case 0xA8:
                     return "i";
-                    break;
                 case 0xA9:
                     return "j";
-                    break;
                 case 0xAA:
                     return "k";
-                    break;
                 case 0xAB:
                     return "l";
-                    break;
                 case 0xAC:
                     return "m";
-                    break;
                 case 0xAD:
                     return "n";
-                    break;
                 case 0xAE:
                     return "o";
-                    break;
                 case 0xAF:
                     return "p";
-                    break;
                 case 0xB0:
                     return "q";
-                    break;
                 case 0xB1:
                     return "r";
-                    break;
                 case 0xB2:
                     return "s";
-                    break;
                 case 0xB3:
                     return "t";
-                    break;
                 case 0xB4:
                     return "u";
-                    break;
                 case 0xB5:
                     return "v";
-                    break;
                 case 0xB6:
                     return "w";
-                    break;
                 case 0xB7:
                     return "x";
-                    break;
                 case 0xB8:
                     return "y";
-                    break;
                 case 0xB9:
                     return "z";
-                    break;
                 case 0xBA:
                     return ",";
-                    break;
                 case 0xBC:
                     return "'l";
-                    break;
                 case 0xBD:
                     return "'s";
-                    break;
                 case 0xBE:
                     return "'t";
-                    break;
                 case 0xBF:
                     return "'v";
-                    break;
                 case 0xE0:
                     return "'";
-                    break;
                 case 0xE1:
                     return "PK";
-                    break;
                 case 0xE2:
                     return "MN";
-                    break;
                 case 0xE3:
                     return "-";
-                    break;
                 case 0xE4:
                     return "'r";
-                    break;
                 case 0xE5:
                     return "'m";
-                    break;
                 case 0xE6:
                     return "?";
-                    break;
                 case 0xE7:
                     return "!";
-                    break;
                 case 0xE8:
                     return ".";
-                    break;
                 case 0xF4:
                     return ",";
-                    break;
                 case 0xF6:
                     return "0";
-                    break;
                 case 0xF7:
                     return "1";
-                    break;
                 case 0xF8:
                     return "2";
-                    break;
                 case 0xF9:
                     return "3";
-                    break;
                 case 0xFA:
                     return "4";
-                    break;
                 case 0xFB:
                     return "5";
-                    break;
                 case 0xFC:
                     return "6";
-                    break;
                 case 0xFD:
                     return "7";
-                    break;
                 case 0xFE:
                     return "8";
-                    break;
                 case 0xFF:
                     return "9";
-                    break;
                 default:
                     return "";
             }
@@ -842,268 +755,180 @@ namespace PokeSavRBG
             {
                 case '=':
                     return 0x4F;
-                    break;
                 case '#':
                     return 0x57;
-                    break;
                 case '*':
                     return 0x51;
-                    break;
-                    /*case 0x52:
-                        return "A1";
-                        break;
-                    case 0x53:
-                        return "A2";
-                        break;
-                    case 0x54:
-                        return "PK";*/
-                    break;
+                /*case 0x52:
+                   return "A1";
+               case 0x53:
+                   return "A2";
+               case 0x54:
+                   return "PK";*/
                 case '+':
                     return 0x55;
-                    break;
                 case '$':
                     return 0x58;
-                    break;
                 case ' ':
                     return 0x7F;
-                    break;
                 case 'A':
                     return 0x80;
-                    break;
                 case 'B':
                     return 0x81;
-                    break;
                 case 'C':
                     return 0x82;
-                    break;
                 case 'D':
                     return 0x83;
-                    break;
                 case 'E':
                     return 0x84;
-                    break;
                 case 'F':
                     return 0x85;
-                    break;
                 case 'G':
                     return 0x86;
-                    break;
                 case 'H':
                     return 0x87;
-                    break;
                 case 'I':
                     return 0x88;
-                    break;
                 case 'J':
                     return 0x89;
-                    break;
                 case 'K':
                     return 0x8A;
-                    break;
                 case 'L':
                     return 0x8B;
-                    break;
                 case 'M':
                     return 0x8C;
-                    break;
                 case 'N':
                     return 0x8D;
-                    break;
                 case 'O':
                     return 0x8E;
-                    break;
                 case 'P':
                     return 0x8F;
-                    break;
                 case 'Q':
                     return 0x90;
-                    break;
                 case 'R':
                     return 0x91;
-                    break;
                 case 'S':
                     return 0x92;
-                    break;
                 case 'T':
                     return 0x93;
-                    break;
                 case 'U':
                     return 0x94;
-                    break;
                 case 'V':
                     return 0x95;
-                    break;
                 case 'W':
                     return 0x96;
-                    break;
                 case 'X':
                     return 0x97;
-                    break;
                 case 'Y':
                     return 0x98;
-                    break;
                 case 'Z':
                     return 0x99;
-                    break;
                 case ':':
                     return 0x9C;
-                    break;
                 case 'a':
                     return 0xA0;
-                    break;
                 case 'b':
                     return 0xA1;
-                    break;
                 case 'c':
                     return 0xA2;
-                    break;
                 case 'd':
                     return 0xA3;
-                    break;
                 case 'e':
                     return 0xA4;
-                    break;
                 case 'f':
                     return 0xA5;
-                    break;
                 case 'g':
                     return 0xA6;
-                    break;
                 case 'h':
                     return 0xA7;
-                    break;
                 case 'i':
                     return 0xA8;
-                    break;
                 case 'j':
                     return 0xA9;
-                    break;
                 case 'k':
                     return 0xAA;
-                    break;
                 case 'l':
                     return 0xAB;
-                    break;
                 case 'm':
                     return 0xAC;
-                    break;
                 case 'n':
                     return 0xAD;
-                    break;
                 case 'o':
                     return 0xAE;
-                    break;
                 case 'p':
                     return 0xAF;
-                    break;
                 case 'q':
                     return 0xB0;
-                    break;
                 case 'r':
                     return 0xB1;
-                    break;
                 case 's':
                     return 0xB2;
-                    break;
                 case 't':
                     return 0xB3;
-                    break;
                 case 'u':
                     return 0xB4;
-                    break;
                 case 'v':
                     return 0xB5;
-                    break;
                 case 'w':
                     return 0xB6;
-                    break;
                 case 'x':
                     return 0xB7;
-                    break;
                 case 'y':
                     return 0xB8;
-                    break;
                 case 'z':
                     return 0xB9;
-                    break;
-                    /*case ',':
-                        return 0xBA;
-                        break;
-                    /*case 0xBC:
-                        return "'l";
-                        break;
-                    case 0xBD:
-                        return "'s";
-                        break;
-                    case 0xBE:
-                        return "'t";
-                        break;
-                    case 0xBF:
-                        return "'v";*/
-                    break;
+                /*case ',':
+                    return 0xBA;
+                case "'1":
+                    return 0xBC;
+                case "'s":
+                    return 0xBD;
+                case "'t":
+                    return 0xBE;
+                case "'v":
+                    return 0xBF;*/
                 case '\'':
                     return 0xE0;
-                    break;
-                    /*case 0xE1:
-                        return "PK";
-                        break;
-                    case 0xE2:
-                        return "MN";*/
-                    break;
+                /*case "PK":
+                    return 0xE1;
+                case "MN":
+                    return 0xE2;*/
                 case '-':
                     return 0xE3;
-                    break;
-                    /*case 0xE4:
-                        return "'r";
-                        break;
-                    case 0xE5:
-                        return "'m";*/
-                    break;
+                /*case "'r":
+                    return 0xE4;
+                case "'m":
+                    return 0xE5;*/
                 case '?':
                     return 0xE6;
-                    break;
                 case '!':
                     return 0xE7;
-                    break;
                 case '.':
                     return 0xE8;
-                    break;
                 case ',':
                     return 0xF4;
-                    break;
                 case '0':
                     return 0xF6;
-                    break;
                 case '1':
                     return 0xF7;
-                    break;
                 case '2':
                     return 0xF8;
-                    break;
                 case '3':
                     return 0xF9;
-                    break;
                 case '4':
                     return 0xFA;
-                    break;
                 case '5':
                     return 0xFB;
-                    break;
                 case '6':
                     return 0xFC;
-                    break;
                 case '7':
                     return 0xFD;
-                    break;
                 case '8':
                     return 0xFE;
-                    break;
                 case '9':
                     return 0xFF;
-                    break;
                 case '%':
                     return 0x50;
-                    break;
                 default:
                     return 0x00;
             }
